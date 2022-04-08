@@ -1,0 +1,29 @@
+Polecenie:
+Dane to zdenormalizowana lista podróży między różnymi miastami podzielonych na odcinki. Twoje zadanie polega na:
+1. Zaproponowaniu schematu bazy danych w 3NF na podstawie nagłówków i danych w pliku wejściowym.
+2. Napisaniu (w dowolnym języku) skryptu parsującego i transformującego dane, a następnie ładującego je do stworzonej wcześniej bazy.
+3. Stworzeniu zapytania SQL, które odpyta dane w bazie w taki sposób, aby rezultat był identyczny z danymi wejściowymi.
+
+W odpowiedzi na tą wiadomość załącz proszę:
+1. Skrypt DDL tworzący obiekty bazy danych.
+2. Skrypt ETL migrujący dane.
+3. Zapytanie SQL odtwarzające pierwotną postać danych wejściowych.
+
+
+Metodologia:
+1. Stworzenie bazy danych
+1.1 Stworzenie bazy danych na sqlite
+1.2 Utworzenie tabel i relacyjności między nimi. Tutaj wyszedłem z założenia, że powinny być 4 tabele: Cities, Users, Travels i Stages. Każde miasto jak i kierowca/pasażer powinny mieć swoje unikatowe ID, więc potrzebne były dla nich dodatkowe tabele
+2. Napisanie skryptu wczytującego plik csv i wrzucającego dane do bazy danych
+2.1 Stworzenie funkcji tworzącej połączenie z bazą danych
+2.2 Obrobienie zaczytanego pliku csv (wykorzystane biblioteki: pandas, numpy):
+2.2.1 Stworzenie dodatkowych kolumn informujących które miasto jest początkiem, a które końcem trasy (ekwiwalent funkcji okienkowej w SQL)
+2.2.2 Wypisanie unikatowych tras (wraz z dodanymi wcześniej kolumnami informujacymi o początku i końcu trasy)
+2.2.3 Wypisanie unikatowych miast (zarówno z kolumny city_from jak city_to)
+2.2.4 Wypisanie unikatowych ludzi - tutaj najpierw zesplitowałem ostatnią kolumnę i podzieliłem ja na 4 (wyszedłem z założenia, że jedziemy osobówką, więc max 4 pasażerów można przewieźć (aczkolwiek na ego Górniak i Jakimowicza potrzebny byłby dostawczak), następnie połączyłem wszystkie nowo powstałe kolumny (oraz kolumnę z kierowcą) i usunąłem z nich duplikaty
+2.2.5 Wypisanie wszystkich stage'y (odcinków)
+2.2.6 Funkcja zwróciła mi więc 4 listy - listę unikatowych podróży, miast, ludzi oraz stage'y
+2.3 Sprawdzenie, których miast/ludzi nie ma już w odpowiednich tabelach w bazie danych. Jeżeli jakiegoś miasta/człowieka brakuje, wtedy skrypt dorzuca go do swojej tabeli przypisując mu unikatowy numer id (autoincrement)
+2.4 Dorzucenie listy z unikatowymi travelami do tabeli Travels. Zanim lista została dodana, nazwy miast oraz kierowcy zostały podmienione przez ich id (wiadomo, że wszyscy kierowcy/miasta już są w bazie danych)
+2.5 W analogiczny sposób dorzucenie stage'y do tabeli Stages
+3. Napisanie skryptu SQL odtwarzającego plik csv

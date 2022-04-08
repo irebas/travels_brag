@@ -1,0 +1,8 @@
+travel_description|travel_date|section_order|city_from|city_to|section_distance_km|section_time_min|section_avg_speed_km_h|travel_avg_speed_km_h|travel_total_distance_km|driver_name|other_passengers
+Podróż z Poznania do Warszawy przez Łódź|01/12/2020|1|Poznań|Łódź|218|146|89.59|83.1|349|Piotr Żyła|Krzysztof Ibisz,Edyta Górniak
+Podróż z Poznania do Warszawy przez Łódź|01/12/2020|2|Łódź|Warszawa|131|106|74.15|83.1|349|Piotr Żyła|Krzysztof Ibisz
+Podróż z Wrocławia do Rzeszowa z przystankami|12/12/2020|1|Wrocław|Katowice|195|130|90|87.92|444|Adam Nowak|Anna Kowalska,Jarosław Jakimowicz
+Podróż z Wrocławia do Rzeszowa z przystankami|12/12/2020|2|Katowice|Kraków|79|64|74.06|87.92|444|Adam Nowak|Anna Kowalska,Jarosław Jakimowicz,Edyta Górniak
+Podróż z Wrocławia do Rzeszowa z przystankami|12/12/2020|3|Kraków|Rzeszów|170|109|93.58|87.92|444|Adam Nowak|Edyta Górniak
+Podróż z Warszawy do Katowic - stajemy też w Łodzi|08/12/2020|1|Warszawa|Łódź|131|92|85.43|76.7|418|Edyta Górniak|Jarosław Jakimowicz,Adam Nowak
+Podróż z Warszawy do Katowic - stajemy też w Łodzi|08/12/2020|2|Łódź|Katowice|287|235|73.28|76.7|418|Edyta Górniak|Jarosław Jakimowicz

@@ -1,0 +1,11 @@
+travel_description|travel_date|section_order|city_from|city_to|section_distance_km|section_time_min|section_avg_speed_km_h|travel_avg_speed_km_h|travel_total_distance_km|driver_name|other_passengers
+Alrededor de Espana|01.01.2022|1|Madrid|Sevilla|530|300|120|110|2135|Karim Benzema|Luka Modric
+Alrededor de Espana|01.01.2022|2|Sevilla|Valencia|655|360|115|110|2135|Karim Benzema|Ivan Rakitic,Ferran Torres,Jordi Alba,Gerard Pique
+Alrededor de Espana|01.01.2022|3|Valencia|Barcelona|350|210|95|110|2135|Karim Benzema|Ferran Torres,Jordi Alba,Gerard Pique
+Alrededor de Espana|01.01.2022|4|Barcelona|Bilbao|600|330|100|110|2135|Karim Benzema|Ansu Fati
+Spaghetti, Pizza Bolognese|15.01.2022|1|Torino|Milan|140|110|80|90|1190|Cristiano Ronaldo|Romelu Lukaku,Paolo Dybala,Federico chiesa,Juan Cuadrado
+Spaghetti, Pizza Bolognese|15.01.2022|2|Milan|Rome|570|340|95|90|1190|Cristiano Ronaldo|Paolo Dybala,Federico chiesa,Juan Cuadrado
+Spaghetti, Pizza Bolognese|15.01.2022|3|Rome|Naples|220|150|100|90|1190|Cristiano Ronaldo|Juan Cuadrado,Piotr Zielinski
+Spaghetti, Pizza Bolognese|15.01.2022|4|Naples|Bari|260|190|100|90|1190|Cristiano Ronaldo|Piotr Zielinski
+Wurst i Oktoberfest|01.10.2021|1|Munchen|Stuttgart|230|140|110|120|860|Robert Lewandowski|Thomas Muller,Manuel Neuer
+Wurst i Oktoberfest|01.10.2021|2|Stuttgart|Berlin|630|400|125|120|860|Robert Lewandowski|
