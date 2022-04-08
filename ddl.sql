@@ -1,5 +1,5 @@
 # Create Database
-sqlite3 travels_db.db
+sqlite3 travels_db
 
 CREATE TABLE "Users" (
 user_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
